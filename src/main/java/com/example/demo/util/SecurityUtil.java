@@ -23,7 +23,7 @@ public class SecurityUtil {
         this.jwtEncoder = jwtEncoder;
     }
 
-    public static final MacAlgorithm JWT_ALGORITHM = MacAlgorithm.HS512;
+    public static final MacAlgorithm JWT_ALGORITHM = MacAlgorithm.HS256;
 
     @Value("${nam.jwt.base64-secret}")
     private String jwtKey;
